@@ -68,7 +68,7 @@ export function WeatherDashboard() {
   return <div className="min-h-screen bg-[radial-gradient(circle_at_top_left,_rgba(14,165,233,.18),_transparent_34%),radial-gradient(circle_at_top_right,_rgba(99,102,241,.14),_transparent_28%)]">
     <div className="mx-auto max-w-7xl px-4 py-5 sm:px-6 sm:py-7 lg:px-8">
       <header className="mb-5 flex flex-wrap items-center justify-between gap-3">
-        <div className="flex items-center gap-3"><div className="grid size-11 place-items-center rounded-2xl bg-primary text-primary-foreground shadow-lg"><CloudSun className="size-6" /></div><div><h1 className="text-xl font-bold tracking-tight">Weatherly</h1><p className="text-xs text-muted-foreground">Open-Meteo 실시간 날씨</p></div></div>
+        <div className="flex items-center gap-3"><div className="grid size-11 place-items-center rounded-2xl bg-primary text-primary-foreground shadow-lg"><CloudSun className="size-6" /></div><div><h1 className="text-xl font-bold tracking-tight">세뽕이날씨</h1><p className="text-xs text-muted-foreground">Open-Meteo 실시간 날씨</p></div></div>
         <div className="flex flex-1 items-center justify-end gap-2 sm:flex-none"><CitySelector location={location} onSelect={selectLocation} /><Button variant="outline" size="icon" title="현재 위치" onClick={useCurrentLocation}><LocateFixed className="size-4" /></Button><Button variant="outline" size="icon" title="새로고침" onClick={() => void loadWeather(location, true)} disabled={refreshing}><RefreshCw className={`size-4 ${refreshing ? "animate-spin" : ""}`} /></Button></div>
       </header>
 
